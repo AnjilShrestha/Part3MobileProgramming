@@ -9,6 +9,7 @@
         android:id="@+id/txtOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Output will be displayed here" />
+        android:text="Output will be displayed here"
+        android:textSize="34sp"/>
 
 </FrameLayout>
