@@ -14,9 +14,6 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -43,8 +40,10 @@ public class MenuActivity extends AppCompatActivity {
                         int id=item.getItemId();
                         if(id==R.id.popnew)
                             Toast.makeText(getApplicationContext(),"Menu New is clicked",Toast.LENGTH_LONG).show();
-                        if(id==R.id.popsave)
-                            Toast.makeText(getApplicationContext(),"Menu Save is clicked",Toast.LENGTH_LONG).show();
+                        if(id==R.id.popopen)
+                            Toast.makeText(getApplicationContext(),"Menu Open is clicked",Toast.LENGTH_LONG).show();
+                        if(id==R.id.popclose)
+                            Toast.makeText(getApplicationContext(),"Menu Close is clicked",Toast.LENGTH_LONG).show();
                         return false;
                     }
                 });
@@ -61,10 +60,12 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         int id=item.getItemId();
-        if(id==R.id.contextcont)
-            Toast.makeText(getApplicationContext(),"cont menu is clicked",Toast.LENGTH_LONG).show();
-        if(id==R.id.contextcontent)
-            Toast.makeText(getApplicationContext(),"Content is clicked",Toast.LENGTH_LONG).show();
+        if(id==R.id.copy)
+            Toast.makeText(getApplicationContext(),"Copy is clicked",Toast.LENGTH_LONG).show();
+        if(id==R.id.paste)
+            Toast.makeText(getApplicationContext(),"Paste is clicked",Toast.LENGTH_LONG).show();
+        if(id==R.id.select)
+            Toast.makeText(getApplicationContext(),"Select is clicked",Toast.LENGTH_LONG).show();
         return super.onOptionsItemSelected(item);
     }
     @Override
